@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/style.css" type="text/css">　<!-- 我們的CSS-->
+	<!-- scrollmagic CSS-->
+<!--
+	<link rel="stylesheet" href="../assets/css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="../assets/css/examples.css" type="text/css">
+-->
+<!--	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">-->
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/highlight.pack.js"></script>
+	<script type="text/javascript" src="../js/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/examples.js"></script>
+    
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+	
+	<script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
+
+    
+    <!-- <script type="text/javascript" src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+	
+    <!-- scrollmagic CSS-->
+    <!--新增-->
+	<!-- <script type="text/javascript" src="../js/animation.velocity.js"></script> -->
+    <!--END-->
+    <title>娃娃衣櫃</title>
+</head>
+
+<body>
+
+<!------------------------------- RWD ------------------------------->
+	<div id="all_rwd">
+	<div id="trigger_door_rwd"></div>
+	<div id="door_rwd">
+		<img id="door_l_rwd" src="../img_rwd/門_左.png">
+		<img id="wardrobe_rwd" src="../img_rwd/衣櫃.png">
+		<img id="door_r_rwd" src="../img_rwd/門_右.png">
+		<img id="tital_rwd" src="../img_rwd/tital.png">
+	</div>
+	<div id="trigger_scissorandcloth_RWD"></div>
+	<div id="trigger_sciandcloth_RWD"></div>
+	<div id="clothes_rwd">
+		<img id="clothes_rwd_top" src="../img_rwd/布.png">
+		<img id="clothes_rwd_middle" src="../img_rwd/剪刀.png">
+		<img id="clothes_rwd_bottom" src="../img_rwd/布_2.png">
+	</div>
+	<div id="trigger_petal_RWD"></div>
+	<div id="trigger_ruler_1_rwd"></div>
+	<div id="trigger_balloon_1_disappear_rwd"></div>
+	<div id="doll_pin_rwd"></div>
+	<div id="trigger_balloon_2_rwd"></div>
+	<div id="trigger_balloon_3_rwd"></div>
+	<div id="trigger_balloon_2_disappear_rwd"></div>
+	<div id="trigger_balloon_3_disappear_rwd"></div>
+	<div id="trigger_clothes_pin_rwd"></div>
+	<div id="trigger_textsol_rwd"></div>
+	<div id="trigger_letter_rwd"></div>
+		<div id="balloon_rwd">
+			<img src="../img_rwd/balloon_1.png" id="balloon_rwd_1">
+			<img src="../img_rwd/balloon_2.png" id="balloon_rwd_2">
+			<img src="../img_rwd/balloon_3.png" id="balloon_rwd_3">
+		</div>
+		<div id="petalanddoll_rwd">
+			<img id="doll_rwd" src="../img_rwd/娃娃.png">
+		<div id="ruler_rwd">
+			<img src="../img_rwd/尺_1.png" id="ruler_rwd_1">
+			<img src="../img_rwd/尺_2.png" id="ruler_rwd_2">
+		</div>
+		<div id="petal_rwd">
+			<img src="../img_rwd/petal_1.png" id="petal_rwd_1">
+			<img src="../img_rwd/petal_2.png" id="petal_rwd_2">
+			<img src="../img_rwd/petal_3.png" id="petal_rwd_3">
+			<img src="../img_rwd/petal_4.png" id="petal_rwd_4">
+			<img src="../img_rwd/petal_5.png" id="petal_rwd_5">
+			<img src="../img_rwd/petal_6.png" id="petal_rwd_6">
+			<img src="../img_rwd/petal_7.png" id="petal_rwd_7">
+			<img src="../img_rwd/petal_8.png" id="petal_rwd_8">
+			<img src="../img_rwd/petal_9.png" id="petal_rwd_9">
+			<img src="../img_rwd/petal_10.png" id="petal_rwd_10">
+			<img src="../img_rwd/petal_11.png" id="petal_rwd_11">
+			<img src="../img_rwd/petal_12.png" id="petal_rwd_12">
+			<img src="../img_rwd/petal_13.png" id="petal_rwd_13">
+			<img src="../img_rwd/petal_14.png" id="petal_rwd_14">
+			<img src="../img_rwd/petal_15.png" id="petal_rwd_15">
+		</div>
+			<img id="doll_clothes_rwd" src="../img_rwd/和服.png">
+		</div>
+		<div id="textsol">
+			<img src="../img_rwd/心動.png" id="sol1">
+			<img src="../img_rwd/contact.png" id="sol2">
+		</div>
+	<div id="form_rwd">
+		<form id="text_rwd"action="https://formspree.io/s110619046@st.ntue.edu.tw" method="POST">
+			您的大名：<br><input type="text" name="name"><br><br>
+			您的Email：<br><input type="email"name="_replyto"><br><br>
+			內容：<br><input name="Content"></input><br><br<br><br>
+			<input type="submit" value="Send"id="Send">
+		</form>
+	</div>
+	<div id="letter_rwd">
+		<img src="../img_rwd/信封.png" id="envelope_rwd_1">
+		<img src="../img_rwd/信紙.png" id="letterpaper_rwd">
+		<img src="../img_rwd/信封底.png" id="envelope_rwd_2">
+	</div>
+	</div>
+<!------------------------------- RWD ------------------------------->
+
+    <div id="all">
+    <div id="trigger_scissorandcloth"></div>
+    <div id="trigger_pin_sciandcloth"></div>    
+    <div id="trigger_sciandcloth_out"></div>
+       
+    <div id="trigger_tit"></div>
+
+    <div id="trigger_door"></div>
+
+
+
+    <div id="pin2">
+        <div id="door">
+           <img id="door_l" src="../img/門_左.png" width="640 px" height="1326px">
+           <img id="wardrobe" src="../img/衣櫃.png" width="916 px" height="1326px">
+            <img id="door_r" src="../img/門_右.png" width="640 px" height="1326px">
+            <img id="tital" src="../img/tital.png">
+        </div>
+		<img id="cloth" src="../img/布.png" width="1280px">
+        <img id="cloth_2" src="../img/布_1.png" width="1280px">
+        <img id="scissors" src="../img/剪刀.png" width="400 px">
+    </div>
+            
+
+    <div id="trigger_doll_pin"></div>
+    <div id="trigger_clothes_pin"></div>
+
+    <div id="trigger_balloon_2_3_disappear"></div>
+    <div id="pin5">    
+	    <div id="pin1">
+            <img id="doll" src="../img/娃娃.png" width="765px">
+        </div>
+
+        <div id="trigger_ruler_1"></div>
+        <div id="trigger_ruler_1_pin"></div>
+        <div id="trigger_ruler_2"></div>
+        <div id="trigger_balloon_1"></div>
+        <div id="trigger_balloon_1_disappear"></div>
+        
+        <img id="ruler_1" src="../img/尺_1.png">
+        <img id="ruler_2" src="../img/尺_2.png">
+        <img id="balloon_1" src="../img/balloon_1.png">
+
+
+        <div id="trigger_petal"></div>
+        <div id="trigger_petal_dis"></div>
+        <div id="petal">
+            <img id="petal_1" src="../img/petal-1.png" >
+            <img id="petal_2" src="../img/petal-2.png">
+            <img id="petal_3" src="../img/petal-3.png">
+            <img id="petal_4" src="../img/petal-4.png">
+            <img id="petal_7" src="../img/petal-5.png">
+            <img id="petal_6" src="../img/petal-6.png">
+            <img id="petal_5" src="../img/petal-7.png">
+            <img id="petal_11" src="../img/petal-8.png">
+            <img id="petal_10" src="../img/petal-9.png">
+            <img id="petal_9" src="../img/petal-10.png">
+            <img id="petal_13" src="../img/petal-11.png">
+            <img id="petal_12" src="../img/petal-12.png">
+            <img id="petal_8" src="../img/petal-13.png">
+            <img id="petal_14" src="../img/petal-14.png">
+            <img id="petal_15" src="../img/petal-15.png">
+        </div>
+
+        <div id="trigger_balloon_2"></div>
+        <img id="balloon_2" src="../img/balloon_2.png">
+
+        <div id="trigger_balloon_3"></div>
+        <img id="balloon_3" src="../img/balloon_3.png">
+        <img id="clothes" src="../img/和服.png" width="462.6px">
+    </div>
+    
+    <div id="trigger_firework_1_s"></div>
+    <div id="trigger_firework_1_e"></div>
+
+    <div id="trigger_firework_2_s"></div>
+    <div id="trigger_firework_2_e"></div>
+
+    <div id="trigger_firework_3_s"></div>
+    <div id="trigger_firework_3_e"></div>
+
+    <div  id="firework" >
+        <img id="firework_1" src="../img/firework_1_.png">
+        <img id="firework_2" src="../img/firework_2.png">
+        <!-- <img id="firework_3" src="../img/firework_3.png">
+        <img id="firework_4" src="../img/firework_4.png"> -->
+        <img id="firework_5" src="../img/firework_5.png">
+        <img id="firework_6" src="../img/firework_6.png">
+        <img id="firework_7" src="../img/firework_7.png">
+        <img id="firework_8" src="../img/firework_8.png">
+        <img id="firework_9" src="../img/firework_9.png">    
+    </div>
+    <div id="trigger_doll_disappear"></div>
+    <div id="trigger_heart"></div>
+    <div id="trigger_touched"></div>
+    <div id="trigger_contact"></div>
+    <div id="trigger_upup"></div> 
+
+    <div id="heart_and_text">
+        <div id="heart"></div>
+        <img id="touched" src="../img/心動.png">
+        <img id="contact" src="../img/contact.png">
+    </div>
+
+<!-- <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    </script>
+     
+    <style type="text/css">
+    #heart_and_text {
+        transition: transform 0.3s ease-out;
+    }
+    .zap {
+        transform: scale(2.5, 0);
+    }
+    </style>
+
+<div class="spacer s2" z-index="20" >spacer s2</div>
+
+<div id="heart_and_text" class="box1 red">
+    <div id="heart"></div>
+    <img id="touched" src="../img/心動.png">
+    <img id="contact" src="../img/contact.png">
+</div>
+<div class="spacer s2"  z-index="20">spacer s2</div>
+
+<script>
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger_upup"})
+					// trigger animation by adding a css class
+					.setClassToggle("#heart_and_text", "zap")
+					.addIndicators({name: "upup"}) // add indicators (requires plugin)
+					.addTo(controller);
+</script> -->
+
+
+<!-- 
+<div id="try">
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    </script>
+     
+    <style type="text/css">
+    #animate1 {
+        transition: transform 0.3s ease-out;
+    }
+    .zap {
+        transform: scale(2.5, 0);
+    }
+    </style>
+    <div class="spacer s2">spacer s2</div>
+    <div id="trigger1" class="spacer s0"></div>
+    <div id="animate1" class="box1 red">
+        <p>Zap.</p>
+        <a href="#" class="viewsource">view source</a>
+    </div>
+    <div class="spacer s2">spacer s2</div>
+    <script>
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger1"})
+                        // trigger animation by adding a css class
+                        .setClassToggle("#animate1", "zap")
+                        .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+                        .addTo(controller);
+    </script>
+</div> -->
+    
+    <form id="text" action="https://formspree.io/s110619046@stu.ntue.edu.tw" method="POST">
+        您的大名：<input type="text" name="name"><br><br>
+        您的Email：<input type="email" name="_replyto"><br><br>
+        內容：<input name="Content"></input><br><br><br>
+        <input type="submit" value="Send" id="Send">
+  </form>
+
+    <div id="trigger_letter"></div>
+    <div id="letter">
+        <img id="letterpaper" src="../img/信紙.png" width="550px"> 
+        <img id="envelope_1" src="../img/信封.png">
+        <img id="envelope_2" src="../img/信封底.png">
+    </div>
+
+
+    <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+</html>
